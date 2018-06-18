@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		D16D289D20D7C4DA008A1C03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16D289C20D7C4DA008A1C03 /* AppDelegate.swift */; };
-		D16D289F20D7C4DA008A1C03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16D289E20D7C4DA008A1C03 /* ViewController.swift */; };
+		D16D289F20D7C4DA008A1C03 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16D289E20D7C4DA008A1C03 /* MainVC.swift */; };
 		D16D28A220D7C4DA008A1C03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D16D28A020D7C4DA008A1C03 /* Main.storyboard */; };
 		D16D28A420D7C4DB008A1C03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D16D28A320D7C4DB008A1C03 /* Assets.xcassets */; };
 		D16D28A720D7C4DB008A1C03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D16D28A520D7C4DB008A1C03 /* LaunchScreen.storyboard */; };
+		D16D28B320D7CD91008A1C03 /* CustomizeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16D28B220D7CD91008A1C03 /* CustomizeVC.swift */; };
+		D16D28B520D7CF01008A1C03 /* ShirtVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16D28B420D7CF01008A1C03 /* ShirtVC.swift */; };
+		D16D28B720D7D47B008A1C03 /* Shirt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16D28B620D7D47B008A1C03 /* Shirt.swift */; };
+		D16D28B920D7D57D008A1C03 /* ShirtDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16D28B820D7D57D008A1C03 /* ShirtDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D16D289920D7C4DA008A1C03 /* ShoppingAppV1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingAppV1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D16D289C20D7C4DA008A1C03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D16D289E20D7C4DA008A1C03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D16D289E20D7C4DA008A1C03 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		D16D28A120D7C4DA008A1C03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D16D28A320D7C4DB008A1C03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D16D28A620D7C4DB008A1C03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D16D28A820D7C4DB008A1C03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D16D28B220D7CD91008A1C03 /* CustomizeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeVC.swift; sourceTree = "<group>"; };
+		D16D28B420D7CF01008A1C03 /* ShirtVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShirtVC.swift; sourceTree = "<group>"; };
+		D16D28B620D7D47B008A1C03 /* Shirt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shirt.swift; sourceTree = "<group>"; };
+		D16D28B820D7D57D008A1C03 /* ShirtDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShirtDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,50 @@
 		D16D289B20D7C4DA008A1C03 /* ShoppingAppV1 */ = {
 			isa = PBXGroup;
 			children = (
-				D16D289C20D7C4DA008A1C03 /* AppDelegate.swift */,
-				D16D289E20D7C4DA008A1C03 /* ViewController.swift */,
+				D16D28B120D7C922008A1C03 /* Extra */,
+				D16D28AE20D7C906008A1C03 /* Model */,
+				D16D28AF20D7C90C008A1C03 /* View */,
+				D16D28B020D7C917008A1C03 /* Controller */,
 				D16D28A020D7C4DA008A1C03 /* Main.storyboard */,
 				D16D28A320D7C4DB008A1C03 /* Assets.xcassets */,
 				D16D28A520D7C4DB008A1C03 /* LaunchScreen.storyboard */,
 				D16D28A820D7C4DB008A1C03 /* Info.plist */,
 			);
 			path = ShoppingAppV1;
+			sourceTree = "<group>";
+		};
+		D16D28AE20D7C906008A1C03 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D16D28B620D7D47B008A1C03 /* Shirt.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D16D28AF20D7C90C008A1C03 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D16D289E20D7C4DA008A1C03 /* MainVC.swift */,
+				D16D28B220D7CD91008A1C03 /* CustomizeVC.swift */,
+				D16D28B420D7CF01008A1C03 /* ShirtVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D16D28B020D7C917008A1C03 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D16D28B120D7C922008A1C03 /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+				D16D289C20D7C4DA008A1C03 /* AppDelegate.swift */,
+				D16D28B820D7D57D008A1C03 /* ShirtDelegate.swift */,
+			);
+			path = Extra;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D16D289F20D7C4DA008A1C03 /* ViewController.swift in Sources */,
+				D16D289F20D7C4DA008A1C03 /* MainVC.swift in Sources */,
 				D16D289D20D7C4DA008A1C03 /* AppDelegate.swift in Sources */,
+				D16D28B320D7CD91008A1C03 /* CustomizeVC.swift in Sources */,
+				D16D28B720D7D47B008A1C03 /* Shirt.swift in Sources */,
+				D16D28B520D7CF01008A1C03 /* ShirtVC.swift in Sources */,
+				D16D28B920D7D57D008A1C03 /* ShirtDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
